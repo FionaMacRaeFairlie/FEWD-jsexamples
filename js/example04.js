@@ -1,5 +1,6 @@
 var box, container;
     container = document.getElementById("container");
+    // container = document.querySelector("#container");
     for(var i=0;i<5; i++){
     // for(let i=0;i<5; i++){
         box=document.createElement("span");

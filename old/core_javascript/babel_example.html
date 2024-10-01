@@ -1,0 +1,41 @@
+<html>
+  <head> 
+    <title> Sample transpiling ES6 to ES5 </title>
+  </head>
+  <body>
+    <div id="output"></div>
+    <!-- Load Babel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.18.1/babel.min.js"></script>
+    <!-- Your custom script here -->
+    <script type="text/babel">
+      // can also try out in Babel REPL to see the full transpiled code
+      // for different targets
+      // https://babeljs.io/repl
+      
+      const getMessage = () => "Hello World";
+      document.getElementById('output').innerHTML = getMessage();
+
+      class Rectangle {
+        constructor(height, width) {
+            this.height = height;
+            this.width = width;
+        }
+
+        // Getter
+        get area() {
+            return this.calcArea();
+        }
+        // Method
+        calcArea() {
+            return this.height * this.width;
+        }
+      }
+
+      console.log(Rectangle);
+      console.log(getMessage);
+
+      const p = new Rectangle(2,3);
+      console.log(p);
+    </script>
+  </body>
+</html>
