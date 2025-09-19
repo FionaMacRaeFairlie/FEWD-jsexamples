@@ -11,7 +11,7 @@ function hey() {
 // Invoking the function before it's declared
 // This does NOT work
 
-// hey();
+// // hey();
 // // Function Expression
 // const hey = function() {
 //  alert("hey!");

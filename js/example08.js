@@ -25,7 +25,7 @@ console.log("Quotient " + divide);
 
 // Destructuring Assignment
 var sandwich = {
-  bread: "dutch crunch",
+  bread: "oatmeal",
   meat: "tuna",
   cheese: "swiss",
   toppings: ["lettuce", "tomato", "mustard"],

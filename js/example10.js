@@ -1,13 +1,13 @@
 const numbersOne = [1, 2, 3];
 const numbersTwo = [4, 5, 6];
 const numbersCombined = [...numbersOne, ...numbersTwo];
-console.log(numbersCombined);
+console.log(`numbersCombined`,numbersCombined);
 
 const numbers = [1, 2, 3, 4, 5, 6];
 const [one, two, ...rest] = numbers;
-console.log(one);
-console.log(two);
-console.log(rest);
+console.log(`one:`,one);
+console.log(`two:`,two);
+console.log(`rest:`,rest);
 
 function sum(...args) {
   return args.reduce((x, y) => x + y);
@@ -18,8 +18,8 @@ let sumFive = sum(10, 20, 30, 40, 50);
 console.log("sumFive: ", sumFive); // 150
 
 function directions(...args) {
-  var [start, ...remaining] = args;
-  var [finish, ...stops] = remaining.reverse();
+  let [start, ...remaining] = args;
+  let [finish, ...stops] = remaining.reverse();
   console.log("*********************************************************");
   console.log(`drive through ${args.length} areas`);
   console.log(`start in ${start}`);

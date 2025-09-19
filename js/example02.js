@@ -30,4 +30,11 @@ console.log("book.inStock: ",book.inStock, "book.inStock has type:", typeof(book
 book.author = "Flanagan";   // Create new properties by assignment.
 book.contents = {};     // {} is an empty object with no properties.
 
-console.log("book object now contains the following data:\n ",JSON.stringify(book, null, 4));
+console.log("book object currently contains the following data:\n ",JSON.stringify(book, null, 4));
+
+
+book.contents.type="non-fiction"
+book.contents.chapters="five"
+book.contents.level="intermediate"
+
+console.log("book.contents object now contains the following data:\n ",JSON.stringify(book, null, 4));
